@@ -11,13 +11,3 @@
 # pool: 5
 # username: postgres_user
 # password: password
-
-# mysql
-#
-# adapter: mysql2
-# encoding: utf8
-# database: test_mysql_db
-# pool: 5
-# username: root
-# password: password
-# socket: /tmp/mysql.sock
