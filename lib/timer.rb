@@ -18,7 +18,7 @@ class Timer
   private
 
   def count
-    58.downto(0).each do |i|
+    (training.rest_period - 1).downto(0).each do |i|
       bot.api.edit_message_text(
         chat_id: message.chat.id,
         message_id: message.message_id,
