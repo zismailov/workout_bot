@@ -78,6 +78,12 @@ Telegram::Bot::Client.run(config.token) do |bot|
           reply_markup: Menu.complete
         )
       end
+    else
+      bot.api.send_message(
+        chat_id: message.chat.id,
+        text: 'Используйте команды из меню ниже.',
+        reply_markup: Menu.start
+      )
     end
   end
 end
