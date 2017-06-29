@@ -1,6 +1,15 @@
+AllCops:
+  TargetRubyVersion: '2.4.0'
 Documentation:
   Enabled: false
 Metrics/LineLength:
   Max: 120
+Metrics/BlockLength:
+  Exclude:
+    - "bin/main.rb"
+Metrics/AbcSize:
+  Enabled: false
 Style/Documentation:
+  Enabled: false
+Style/FirstParameterIndentation:
   Enabled: false
