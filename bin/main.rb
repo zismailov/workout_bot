@@ -83,6 +83,12 @@ Telegram::Bot::Client.run(config.token) do |bot|
       else
         Thread.new { Timer.new(bot: bot, message: message, training: training).perform }
       end
+    when 'Test_location'
+      bot.api.send_message(
+        chat_id: message.chat.id,
+        text: 'Привет',
+        reply_markup: Menu.test_location
+      )
     else
       bot.api.send_message(
         chat_id: message.chat.id,

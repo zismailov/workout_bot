@@ -15,13 +15,20 @@ class Menu
           ['Начать тренировку'],
           ['Больше кругов'],
           ['Больше упражнений'],
-          ['Отдых 40с', 'Отдых 50с', 'Отдых 60с']
+          ['Отдых 40с', 'Отдых 50с', 'Отдых 60с'],
+          ['Test_location']
         ]
       )
     end
 
     def complete
       MenuConstructor.create([['Готово!']])
+    end
+
+    def test_location
+      Telegram::Bot::Types::ReplyKeyboardMarkup.new(
+        keyboard: Telegram::Bot::Types::KeyboardButton.new(text: 'Show me your location', request_location: true)
+      )
     end
   end
 end
