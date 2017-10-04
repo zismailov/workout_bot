@@ -1,4 +1,5 @@
 ## Simple Workout Bot
+### Project for fun
 [![Code Climate](https://codeclimate.com/github/zismailov/workout_bot/badges/gpa.svg)](https://codeclimate.com/github/zismailov/workout_bot)
 [![Test Coverage](https://codeclimate.com/github/zismailov/workout_bot/badges/coverage.svg)](https://codeclimate.com/github/zismailov/workout_bot/coverage)
 [![Issue Count](https://codeclimate.com/github/zismailov/workout_bot/badges/issue_count.svg)](https://codeclimate.com/github/zismailov/workout_bot)
